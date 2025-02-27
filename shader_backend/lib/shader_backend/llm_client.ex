@@ -1,6 +1,6 @@
 defmodule ShaderBackend.LLMClient do
   def generate_shader(description) do
-    api_key = OPENAI_API_KEY
+    api_key = OPENAI_API_KEY 
     url = "https://api.openai.com/v1/chat/completions"
     headers = [
       {"Authorization", "Bearer #{api_key}"},
